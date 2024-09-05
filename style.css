@@ -117,25 +117,6 @@ main {
     transform: scale(1.05);
 }
 
-footer {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    background: #fddde4;
-    /* Baby pink background matching the letter */
-    padding: 15px 0;
-    text-align: center;
-    border-top: 1px solid #fbb6ce;
-    /* Light pink border */
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Open Sans', sans-serif;
-    color: #555;
-    font-size: 16px;
-}
-
-footer p {
-    margin: 0;
-}
 /* Hidden Letter Styles */
 #special-letter {
     margin-top: 1rem;
@@ -156,4 +137,42 @@ footer p {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background: #fddde4;
+    /* Baby pink background for a romantic feel */
+    color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #fbb6ce;
+    /* Light pink border */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Footer Styles */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.9rem;
+        /* Slightly smaller text for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.8rem;
+        /* Further smaller text for very small screens */
+        padding: 0.5rem 0;
+        /* Reduced padding */
+    }
 }
