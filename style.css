@@ -1,0 +1,210 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f4f4f9, #e0e0e0);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    overflow-x: hidden;
+    transition: background 1s ease;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Header Styles */
+header {
+    background: #ff6f61;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #ffd7be;
+    transform: translateY(-100%);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navigation Styles */
+nav {
+    background: #ff6f61;
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.2s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd7be;
+    transform: scale(1.1);
+}
+
+/* Main Styles */
+main {
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Section Styles */
+.hero,
+.feelings,
+.contact {
+    background: #fff;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero h2,
+.feelings h3,
+.contact h3 {
+    color: #ff6f61;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero p,
+.feelings p,
+.contact p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 1rem 0;
+}
+
+.hero:hover,
+.feelings:hover,
+.contact:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.feelings {
+    background: linear-gradient(135deg, #f76c6c, #f9a1a1);
+    color: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feelings blockquote {
+    font-size: 1.5rem;
+    color: #fff;
+    border-left: 4px solid #fff;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Footer Styles */
+footer {
+    background: #ff6f61;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2,
+    .feelings h3,
+    .contact h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero p,
+    .feelings p,
+    .contact p {
+        font-size: 1rem;
+    }
+}
