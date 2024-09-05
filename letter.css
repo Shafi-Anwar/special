@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.letter {
+    margin-top: 2rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.letter h3 {
+    color: #b61b1b;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.letter p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Pen Styles */
+.pen {
+    position: absolute;
+    top: -50px;
+    right: 20px;
+    width: 50px;
+    height: 150px;
+    transform: rotate(45deg);
+    transition: transform 1s ease;
+}
+
+.pen-holder {
+    width: 12px;
+    height: 120px;
+    background-color: #333;
+    margin: 0 auto;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+}
+
+.pen-tip {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #333;
+    position: absolute;
+    top: 120px;
+    left: -10px;
+    border-radius: 4px;
+    transform: rotate(45deg);
+}
+
+/* Pen Animation */
+@keyframes draw {
+    0% {
+        transform: rotate(45deg) translateY(-150px);
+    }
+
+    100% {
+        transform: rotate(45deg) translateY(0);
+    }
+}
+
+.pen.draw {
+    animation: draw 1s forwards;
+}
