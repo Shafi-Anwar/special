@@ -10,69 +10,32 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #f4f4f9, #e0e0e0);
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
+    background: #f8f8f8;
     overflow-x: hidden;
-    transition: background 1s ease;
-}
-
-/* Gradient animation */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
 }
 
 /* Header Styles */
 header {
-    background: #ff6f61;
+    background: #d4a5a5;
     color: #fff;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border-bottom: 4px solid #ffd7be;
-    transform: translateY(-100%);
-    animation: slideIn 1s forwards;
-}
-
-@keyframes slideIn {
-    to {
-        transform: translateY(0);
-    }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #f3e5e5;
 }
 
 header h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     font-family: 'Playfair Display', serif;
-    animation: fadeIn 2s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }
 
 /* Navigation Styles */
 nav {
-    background: #ff6f61;
+    background: #d4a5a5;
     padding: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
 }
@@ -85,20 +48,20 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1.5rem;
+    margin: 0 1rem;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 1.2rem;
-    transition: color 0.2s ease, transform 0.3s ease;
+    font-size: 1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav a:hover {
-    color: #ffd7be;
-    transform: scale(1.1);
+    color: #f3e5e5;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Main Styles */
@@ -115,19 +78,19 @@ main {
 .feelings,
 .contact {
     background: #fff;
-    padding: 2.5rem;
+    padding: 2rem;
     margin-bottom: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero h2,
 .feelings h3,
 .contact h3 {
-    color: #ff6f61;
+    color: #d4a5a5;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
 }
@@ -135,45 +98,44 @@ main {
 .hero p,
 .feelings p,
 .contact p {
-    font-size: 1.2rem;
-    color: #555;
+    font-size: 1rem;
+    color: #666;
     margin: 1rem 0;
 }
 
 .hero:hover,
 .feelings:hover,
 .contact:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .feelings {
-    background: linear-gradient(135deg, #f76c6c, #f9a1a1);
-    color: #fff;
-    padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: #fdf6f6;
+    color: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .feelings blockquote {
-    font-size: 1.5rem;
-    color: #fff;
-    border-left: 4px solid #fff;
+    font-size: 1.2rem;
+    color: #333;
+    border-left: 4px solid #d4a5a5;
     padding-left: 1rem;
     margin: 1rem 0;
     font-style: italic;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    animation: fadeIn 1.5s ease-in;
+    background: #f9f9f9;
+    border-radius: 4px;
 }
 
 /* Footer Styles */
 footer {
-    background: #ff6f61;
+    background: #d4a5a5;
     color: #fff;
     text-align: center;
-    padding: 1.5rem;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Styles */
@@ -193,18 +155,18 @@ footer {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .hero h2,
     .feelings h3,
     .contact h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .hero p,
     .feelings p,
     .contact p {
-        font-size: 1rem;
+        font-size: 0.875rem;
     }
 }
