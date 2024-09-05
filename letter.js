@@ -8,6 +8,6 @@ window.addEventListener('load', () => {
 
     // Show the letter after the pen animation is complete
     pen.addEventListener('animationend', () => {
-        letter.style.opacity = '1';
+        letter.classList.add('open');
     });
 });
