@@ -10,13 +10,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: #f8f8f8;
+    background: #b33f3f;
     overflow-x: hidden;
 }
 
 /* Header Styles */
 header {
-    background: #d4a5a5;
+    background: #b33f3f;
     color: #fff;
     padding: 2rem;
     text-align: center;
@@ -33,7 +33,7 @@ header h1 {
 
 /* Navigation Styles */
 nav {
-    background: #d4a5a5;
+    background: #601515;
     padding: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -88,7 +88,7 @@ main {
 .hero h2,
 .feelings h3,
 .contact h3 {
-    color: #d4a5a5;
+    color: #b61b1b;
     margin-bottom: 1rem;
     font-size: 1.75rem;
     font-weight: 600;
