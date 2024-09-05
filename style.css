@@ -101,7 +101,7 @@ main {
 
 /* Button Styles */
 #special-button {
-    background-color: #4c16a3;
+    background-color: #F4C2C2;
     color: #fff;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -117,6 +117,25 @@ main {
     transform: scale(1.05);
 }
 
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background: #fddde4;
+    /* Baby pink background matching the letter */
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #fbb6ce;
+    /* Light pink border */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
 /* Hidden Letter Styles */
 #special-letter {
     margin-top: 1rem;
