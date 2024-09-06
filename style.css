@@ -4,6 +4,7 @@ body {
     line-height: 1.6;
     color: #333;
     background: #b33f3f;
+    animation: fadeInUp 1s ease-out;
     overflow-x: hidden;
 }
 
@@ -299,3 +300,17 @@ footer p {
         padding: 0.5rem 0;
     }
 }
+/* Define the keyframes for the opening animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
